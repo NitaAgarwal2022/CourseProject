@@ -59,7 +59,7 @@ def performSearch():
                 document_id=i[0]
                 score=i[1]
                 print(mp_id,document_id,score)
-                cursor.execute("insert into new_search_results (mp_id, document_id, score) values (?, ?, ?)",
+                cursor.execute("insert into search_results (mp_id, document_id, score) values (?, ?, ?)",
                 (mp_id, document_id, score))
                                
             
