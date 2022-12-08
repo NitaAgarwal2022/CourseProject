@@ -1,0 +1,52 @@
+<html>
+   <head>
+   <!--link href="./static/main2.css" rel="stylesheet"-->
+   <link href="./static/main2.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script>
+    function getResults() {
+    var mpvalue= $('#mpvalue').val();    
+    $.ajax({
+            url: "/result",
+            type: "POST",
+            data: {mpvalue:mpvalue}
+        }).done(function(response) {                
+          $("#para1").html(response);                    
+          });
+    };
+  </script>
+   <body>
+      <div class="s01">
+         <form>
+             <div class="inner-form">
+                <fieldset>
+                   <legend>CS410 MP Search Engine</legend>
+                </fieldset>
+             </div>
+             <div class="inner-form">
+                 <!--input type="submit"-->                      
+                <div class="input-field first-wrap">
+                   <label for="mpvalue">Select the MP from the list:</label>
+                </div>
+                <div class="input-field second-wrap">
+                   <select id="mpvalue" name="mpvalue">
+                     <option value="MP1">MP1: Getting familiar with Text</option>
+                     <option value="MP2.1">MP2.1: Baseline CS410DL System</option>
+                     <option value="MP2.2">MP2.2: Submit Relevance Judgment</option>
+                     <option value="MP2.3">MP2.3: Search Engines</option>
+                     <option value="MP2.4">MP2.4: Building and Evaluating Search Engines</option>
+                     <option value="MP3">MP3: Implementing the PLSA Algorithm</option>
+                   </select>
+                </div>               
+                <div class="input-field third-wrap">
+                   <button class="btn-search" type="button" id="clicked" onclick="getResults()">Search</button>
+                </div>
+             </div>
+             <div class="inner-form">
+                 <p style="font-size:35px;">Related Lectures:</p>
+                 <p id="para1" style="text-align:left;"></p>
+             </div>
+         </form>
+      </div>
+   </body>
+</html>

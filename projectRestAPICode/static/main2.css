@@ -1,0 +1,119 @@
+   p {
+   font-size: 35px;
+   color: #fff;
+   white-space: pre-line;
+   }
+   a {
+   font-size: 20px;
+   color: #fff;
+   
+   }
+   fieldset {
+   border: 0;
+   }
+   .s01 {
+   min-height: 100vh;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -ms-flex-align: center;
+   align-items: center;
+   font-family: 'Poppins', sans-serif;
+   background: url("./illinois.jpg");
+   background-size: cover;
+   background-position: center center;
+   padding: 15px;
+   }
+   .s01 form {
+   width: 100%;
+   max-width: 1290px;
+   }
+   .s01 form legend {
+   font-size: 45px;
+   line-height: 1;
+   color: #fff;
+   margin-bottom: 0px;
+   
+   }
+   .s01 form .inner-form {
+   background: rgba(0, 0, 0, 0.5);
+   padding: 20px 20px;
+   display: -ms-flexbox;
+   display: flex;
+   width: 100%;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   -ms-flex-align: center;
+   align-items: center;
+   }
+   .s01 form .inner-form2 {
+   background: rgba(0, 0, 0, 0.5);
+   padding: 10px 10px;
+   display: -ms-flexbox;
+   display: flex;
+   width: 100%;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   -ms-flex-align: center;
+   align-items: center;
+   }
+   .s01 form .inner-form .input-field {
+   margin-right: 30px;
+   height: 50px;   
+   }
+   .s01 form .inner-form .input-field input {
+   height: 100%;
+   background: #fff;
+   border-radius: .5px;
+   border: 0;
+   display: block;
+   width: 100%;
+   padding: 10px 32px;
+   font-size: 20px;
+   }
+    .s01 form .inner-form .input-field label {
+    height: 100%;
+    border-radius: .5px;
+    border: 0;
+    display: block;    
+    font-size: 35px;
+    color: #fff;
+    
+    }
+    .s01 form .inner-form .input-field select {
+    height: 100%;
+    background: #fff;
+    border-radius: .5px;
+    border: 0;
+    display: block;    
+    padding: 10px 32px;
+    font-size: 20px;
+    }
+   .s01 form .inner-form .input-field.first-wrap {
+   width: 40%;
+   min-width: 180px;
+   }
+   .s01 form .inner-form .input-field.second-wrap {
+     width: 32.77%;
+     min-width: 180px;
+   }
+   .s01 form .inner-form .input-field.third-wrap {
+   width: 180px;
+   margin-right: 0;
+   }
+   .s01 form .inner-form .input-field.third-wrap .btn-search {
+   height: 100%;
+   width: 100%;
+   background: #4272d7;
+   white-space: nowrap;
+   border-radius: .5px;
+   font-size: 20px;
+   color: #fff;
+   transition: all .2s ease-out, color .2s ease-out;
+   border: 0;
+   cursor: pointer;
+   }
+   .s01 form .inner-form .input-field.third-wrap .btn-search:hover {
+   background: #2d62d3;
+   }
