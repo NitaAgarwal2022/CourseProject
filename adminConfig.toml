@@ -1,0 +1,4 @@
+prefix = "."
+rawLectureData = "rawCorpusData"
+rawMPData = ""
+processedLectureData = "courseraData"
